@@ -5,41 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarSimulationLab"
         mc:Ignorable="d"
-        Title="Car Simulation" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid x:Name="mainWindow">
-        <Label x:Name="driverWindowLabel" Content="Driver Window" HorizontalAlignment="Left" Margin="139,361,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.05,0.219"/>
-        <Label x:Name="gerShiftLabel" Content="Gear Shift" HorizontalAlignment="Left" Margin="355,248,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="domeLightLabel" Content="Dome Light" HorizontalAlignment="Left" Margin="350,30,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.206,-2.344"/>
-        <Label x:Name="headLightsLabel" Content="Head Lights" HorizontalAlignment="Left" Margin="140,282,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="seatBeltLabel" Content="Seat Belt" HorizontalAlignment="Left" Margin="137,55,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="turnSignalLabel" Content="Turn Signal" HorizontalAlignment="Left" Margin="139,193,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="ignitionLabel" Content="Ignition" HorizontalAlignment="Left" Margin="538,214,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="driverSeatLabel" Content="Driver Seat" HorizontalAlignment="Left" Margin="355,358,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.688,0.656"/>
-        <Label x:Name="wipersLabel" Content="Windshield Wipers" HorizontalAlignment="Left" Margin="137,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.453,-0.563"/>
-        <Label x:Name="breakLabel" Content="Brake" HorizontalAlignment="Left" Margin="526,335,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.97,0.563"/>
-        <Label x:Name="driverDoorLabel" Content="Driver Door" HorizontalAlignment="Left" Margin="261,299,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="domeButton" Content="Light Off" HorizontalAlignment="Left" Margin="350,61,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="beltButton" Content="Not Buckled" HorizontalAlignment="Left" Margin="139,81,0,0" VerticalAlignment="Top" Width="75" Click="BeltButton_Click"/>
-        <Button x:Name="breakButton" Content="Apply Brake" HorizontalAlignment="Left" Margin="513,369,0,0" VerticalAlignment="Top" Width="75"/>
-        <RadioButton x:Name="wipersOnButton" Content="Wipers Off" HorizontalAlignment="Left" Margin="140,144,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="wipersOffButton" Content="Wipers On" HorizontalAlignment="Left" Margin="140,164,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="leftSignalButton" Content="Left Signal" HorizontalAlignment="Left" Margin="139,244,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="noSignalButton" Content="No Signal" HorizontalAlignment="Left" Margin="140,224,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="headLightsOnButton" Content="Lights On" HorizontalAlignment="Left" Margin="139,334,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <RadioButton x:Name="headLightsOffButton" Content="Lights Off" HorizontalAlignment="Left" Margin="140,314,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="windowButton" Content="Window Up" HorizontalAlignment="Left" Margin="140,391,0,0" VerticalAlignment="Top" Width="75"/>
-        <RadioButton x:Name="rightSignalButton" Content="Right Signal" HorizontalAlignment="Left" Margin="139,262,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="driverSeatButton" Content="Sit" HorizontalAlignment="Left" Margin="355,391,0,0" VerticalAlignment="Top" Width="75"/>
-        <RadioButton x:Name="gearDriveButton" Content="Drive" HorizontalAlignment="Left" Margin="355,343,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="gearReverseButton" Content="Reverse" HorizontalAlignment="Left" Margin="355,305,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="gearParkButton" Content="Park" HorizontalAlignment="Left" Margin="355,282,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="gearNeutralButton" Content="Neutral" HorizontalAlignment="Left" Margin="355,325,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="driverDoorClosedButton" Content="Door Closed" HorizontalAlignment="Left" Margin="261,331,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="driverDoorOpenButton" Content="Door Open" HorizontalAlignment="Left" Margin="261,355,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="ignitionKeyOffButton" Content="Key Off" HorizontalAlignment="Left" Margin="538,270,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="ignitionAccessoryButton" Content="Accessory" HorizontalAlignment="Left" Margin="538,290,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="ignitionCarOnButton" Content="On" HorizontalAlignment="Left" Margin="538,309,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="ignitionNoKeyButton" Content="No Key" HorizontalAlignment="Left" Margin="538,247,0,0" VerticalAlignment="Top"/>
+        Title="Car Simulation" Height="474.8" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="mainWindow" Height="485" Margin="0,-10,-0.4,-29.4" VerticalAlignment="Top">
+
+        <Label x:Name="driverWindowLabel" Content="Driver Window" HorizontalAlignment="Left" Margin="32,354,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.05,0.219" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="gearShiftLabel" Content="Gear Shift" HorizontalAlignment="Left" Margin="213,194,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="domeLightLabel" Content="Dome Light" HorizontalAlignment="Left" Margin="223,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.206,-2.344" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="headLightsLabel" Content="Head Lights" HorizontalAlignment="Left" Margin="52,285,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="seatBeltLabel" Content="Seat Belt" HorizontalAlignment="Left" Margin="64,35,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="turnSignalLabel" Content="Turn Signal" HorizontalAlignment="Left" Margin="52,184,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="ignitionLabel" Content="Ignition" HorizontalAlignment="Left" Margin="208,317,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.175"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="driverSeatLabel" Content="Driver Seat" HorizontalAlignment="Left" Margin="378,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.31,0.583" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="wipersLabel" Content="Windshield Wipers" HorizontalAlignment="Left" Margin="32,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.453,-0.563" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="breakLabel" Content="Brake" HorizontalAlignment="Left" Margin="413,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.97,0.563" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="driverDoorLabel" Content="Driver Door" HorizontalAlignment="Left" Margin="208,110,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="domeLightButton" Content="Light Off" HorizontalAlignment="Left" Margin="199,60,0,0" VerticalAlignment="Top" Width="131" Click="DomeButton_Click" Height="39" FontWeight="Bold" FontSize="22" Foreground="White" BorderBrush="#FF020000" Background="#FF0C0000"/>
+        <Button x:Name="beltButton" Content="Not Buckled" HorizontalAlignment="Left" Margin="14,62,0,0" VerticalAlignment="Top" Width="153" Click="BeltButton_Click" FontSize="22" FontWeight="Bold" Background="#FFDDDDDD"/>
+        <Button x:Name="brakeButton" Content="Apply Brake" HorizontalAlignment="Left" Margin="364,140,0,0" VerticalAlignment="Top" Width="158" Height="39" FontWeight="Bold" FontSize="22" Click="BrakeButton_Click" BorderBrush="Black" Foreground="White" Background="#FF110101"/>
+        <RadioButton x:Name="wipersOnButton" Content="Wipers Off" HorizontalAlignment="Left" Margin="52,144,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="wipersOffButton" Content="Wipers On" HorizontalAlignment="Left" Margin="52,164,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="leftSignalButton" Content="Left Signal" HorizontalAlignment="Left" Margin="57,238,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="noSignalButton" Content="No Signal" HorizontalAlignment="Left" Margin="57,218,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="headLightsOnButton" Content="Lights On" HorizontalAlignment="Left" Margin="57,334,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="headLightsOffButton" Content="Lights Off" HorizontalAlignment="Left" Margin="58,313,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="windowButton" Content="Window Up" HorizontalAlignment="Left" Margin="10,393,0,0" VerticalAlignment="Top" Width="170" FontSize="22" FontWeight="Bold"/>
+        <RadioButton x:Name="rightSignalButton" Content="Right Signal" HorizontalAlignment="Left" Margin="57,258,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="driverSeatButton" Content="Sit" HorizontalAlignment="Left" Margin="364,67,0,0" VerticalAlignment="Top" Width="158" Height="31" FontWeight="Bold" FontSize="22" RenderTransformOrigin="2.427,-8.374" Click="DriverSeatButton_Click"/>
+        <RadioButton x:Name="gearDriveButton" Content="Drive" HorizontalAlignment="Left" Margin="213,297,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="gearReverseButton" Content="Reverse" HorizontalAlignment="Left" Margin="213,246,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="gearParkButton" Content="Park" HorizontalAlignment="Left" Margin="213,226,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="gearNeutralButton" Content="Neutral" HorizontalAlignment="Left" Margin="213,273,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="driverDoorClosedButton" Content="Door Closed" HorizontalAlignment="Left" Margin="213,144,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="driverDoorOpenButton" Content="Door Open" HorizontalAlignment="Left" Margin="213,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.059,0.553"/>
+        <RadioButton x:Name="ignitionKeyOffButton" Content="Key Off" HorizontalAlignment="Left" Margin="216,375,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="ignitionAccessoryButton" Content="Accessory" HorizontalAlignment="Left" Margin="215,398,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="ignitionCarOnButton" Content="On" HorizontalAlignment="Left" Margin="216,418,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="ignitionNoKeyButton" Content="No Key" HorizontalAlignment="Left" Margin="215,354,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
