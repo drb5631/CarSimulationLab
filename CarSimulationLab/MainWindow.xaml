@@ -37,7 +37,7 @@
         <RadioButton x:Name="noSignalButton" Content="No Signal" HorizontalAlignment="Left" Margin="57,218,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="headLightsOnButton" Content="Lights On" HorizontalAlignment="Left" Margin="57,334,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="headLightsOffButton" Content="Lights Off" HorizontalAlignment="Left" Margin="58,313,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="windowButton" Content="Window Up" HorizontalAlignment="Left" Margin="10,393,0,0" VerticalAlignment="Top" Width="170" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="windowButton" Content="Window Up" HorizontalAlignment="Left" Margin="10,393,0,0" VerticalAlignment="Top" Width="170" FontSize="22" FontWeight="Bold" Click="WindowButton_Click" Foreground="#FFF6F5F5" BorderBrush="#FF0C0000" Background="#FF090000"/>
         <RadioButton x:Name="rightSignalButton" Content="Right Signal" HorizontalAlignment="Left" Margin="57,258,0,0" VerticalAlignment="Top"/>
         <Button x:Name="driverSeatButton" Content="Sit" HorizontalAlignment="Left" Margin="364,67,0,0" VerticalAlignment="Top" Width="158" Height="31" FontWeight="Bold" FontSize="22" RenderTransformOrigin="2.427,-8.374" Click="DriverSeatButton_Click"/>
         <RadioButton x:Name="gearDriveButton" Content="Drive" HorizontalAlignment="Left" Margin="213,297,0,0" VerticalAlignment="Top"/>

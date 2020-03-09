@@ -53,7 +53,6 @@ namespace CarSimulationLab
 
         private void BeltButton_Click(object sender, RoutedEventArgs e)
         {
-            beltButton.
 
             if ((string) beltButton.Content == "Not Buckled")
             {
@@ -86,6 +85,20 @@ namespace CarSimulationLab
             {
                 brakeButton.Background = Brushes.Black;
                 brakeButton.Content = "Apply Brake";
+            }
+        }
+
+        private void WindowButton_Click(object sender, RoutedEventArgs e)
+        {
+            if ((string) windowButton.Content == "Window Up")
+            {
+                windowButton.Background = Brushes.SkyBlue;
+                windowButton.Content = "Window Down";
+            }
+            else
+            {
+                windowButton.Background = Brushes.Black;
+                windowButton.Content = "Window Up";
             }
         }
     }
