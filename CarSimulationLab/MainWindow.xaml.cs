@@ -35,6 +35,7 @@ namespace CarSimulationLab
                 {
                     case "off":
                         domeLightButton.Background = Brushes.Yellow;
+                        domeLightButton.Foreground = Brushes.Black;
                         domeLightButton.Content = "Light On";
                         domeLightState = "on";
                         break;
@@ -45,6 +46,7 @@ namespace CarSimulationLab
                         break;
                     case "auto":
                         domeLightButton.Background = Brushes.Black;
+                        domeLightButton.Foreground = Brushes.White;
                         domeLightButton.Content = "Light Off";
                         domeLightState = "off";
                         break;
@@ -67,10 +69,12 @@ namespace CarSimulationLab
         private void DriverSeatButton_Click(object sender, RoutedEventArgs e)
         {
             if ((string) driverSeatButton.Content == "Sit") {
+                driverSeatButton.Background = Brushes.Green;
                 driverSeatButton.Content = "Driver Seated";
             }
             else
             {
+                driverSeatButton.Background = Brushes.Black;
                 driverSeatButton.Content = "Sit";
             }
         }
