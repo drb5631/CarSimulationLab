@@ -34,6 +34,7 @@ namespace CarSimulationLab
                 switch (domeLightState)
                 {
                     case "off":
+                        domeLightImage.Source = new BitmapImage(new Uri(""));
                         domeLightButton.Background = Brushes.Yellow;
                         domeLightButton.Foreground = Brushes.Black;
                         domeLightButton.Content = "Light On";
@@ -58,6 +59,7 @@ namespace CarSimulationLab
 
             if ((string) beltButton.Content == "Not Buckled")
             {
+                beltButton.Background = Brushes.Green;
                 beltButton.Content = "Buckled";
             }
             else
@@ -103,6 +105,18 @@ namespace CarSimulationLab
             {
                 windowButton.Background = Brushes.Black;
                 windowButton.Content = "Window Up";
+            }
+        }
+
+        private void WipersBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (wipersBox.SelectedItem == wipersOffButton)
+            {
+                
+            }
+            else
+            {
+
             }
         }
     }

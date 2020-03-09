@@ -95,7 +95,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\car.jpg" />
+    <Resource Include="images\accessory.jpg" />
+    <Resource Include="images\buckled.jpg" />
+    <Resource Include="images\domeLight.jpg" />
+    <Resource Include="images\drive.jpg" />
+    <Resource Include="images\keyOff.png" />
+    <Resource Include="images\leftSignal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\carOn.jpg" />
+    <Resource Include="images\lightsOff.jpg" />
+    <Resource Include="images\lightsOn.jpg" />
+    <Resource Include="images\neutral.jpg" />
+    <Resource Include="images\noKey.jpg" />
+    <Resource Include="images\notBuckled.jpg" />
+    <Resource Include="images\park.jpg" />
+    <Resource Include="images\reverse.jpg" />
+    <Resource Include="images\rightSignal.png" />
+    <Resource Include="images\wipersOff.jpg" />
+    <Resource Include="images\wipersOn.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
