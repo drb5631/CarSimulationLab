@@ -41,7 +41,7 @@
         <Button x:Name="driverSeatButton" Content="Sit" HorizontalAlignment="Left" Margin="225.6,67,0,0" VerticalAlignment="Top" Width="158" Height="31" FontWeight="Bold" FontSize="22" RenderTransformOrigin="2.427,-8.374" Click="DriverSeatButton_Click" Background="#FF0B0101" Foreground="White" Grid.Column="1"/>
         <ListBox x:Name="wipersBox" HorizontalAlignment="Left" Height="48" Margin="41,144,0,0" VerticalAlignment="Top" Width="100" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2" SelectionChanged="WipersBox_SelectionChanged">
             <RadioButton x:Name="wipersOffButton" Content="Wipers Off" IsChecked="True"/>
-            <RadioButton x:Name="wipersOnButton" Content="Wipers On"/>
+            <RadioButton x:Name="wipersOnButton" Content="Wipers On" Checked="WipersOnButton_Checked"/>
         </ListBox>
         <ListBox x:Name="turnSignalBox" HorizontalAlignment="Left" Height="62" Margin="48,223,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2">
             <RadioButton x:Name="noSignalButton" Content="No Signal" IsChecked="True"/>
@@ -68,7 +68,9 @@
             <RadioButton x:Name="ignitionAccessoryButton" Content="Accessory"/>
             <RadioButton x:Name="ignitionOnButton" Content="On"/>
         </ListBox>
-        <Image x:Name="domeLightImage" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="54,33,0,0" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="2"/>
+        <Image x:Name="domeLightImage" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="28,33,0,0" VerticalAlignment="Top" Width="175" Grid.ColumnSpan="2" Stretch="Fill"/>
+        <Image x:Name="seatBeltImage" Grid.Column="1" HorizontalAlignment="Left" Height="118" Margin="235.6,214,0,0" VerticalAlignment="Top" Width="137" Stretch="Fill" Source="images/notBuckled.jpg"/>
+        <Image x:Name="wipersImage" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="45,314,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

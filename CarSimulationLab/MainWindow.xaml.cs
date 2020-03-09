@@ -34,18 +34,26 @@ namespace CarSimulationLab
                 switch (domeLightState)
                 {
                     case "off":
-                        domeLightImage.Source = new BitmapImage(new Uri(""));
+                        domeLightImage.Source = new BitmapImage(new Uri("images/domeLight.jpg", UriKind.Relative));
                         domeLightButton.Background = Brushes.Yellow;
                         domeLightButton.Foreground = Brushes.Black;
                         domeLightButton.Content = "Light On";
                         domeLightState = "on";
                         break;
                     case "on":
+                        if (doorOpenButton.IsChecked == true) {
+                        domeLightImage.Source = new BitmapImage(new Uri("images/domeLight.jpg", UriKind.Relative));
+                        }
+                        else
+                    {
+                        domeLightImage.Source = null;
+                    }
                         domeLightButton.Background = Brushes.Blue;
                         domeLightButton.Content = "Light Auto";
                         domeLightState = "auto";
                         break;
                     case "auto":
+                        domeLightImage.Source = null;
                         domeLightButton.Background = Brushes.Black;
                         domeLightButton.Foreground = Brushes.White;
                         domeLightButton.Content = "Light Off";
@@ -61,9 +69,12 @@ namespace CarSimulationLab
             {
                 beltButton.Background = Brushes.Green;
                 beltButton.Content = "Buckled";
+                seatBeltImage.Source = new BitmapImage(new Uri("images/buckled.jpg", UriKind.Relative));
             }
             else
             {
+                beltButton.Background = Brushes.Red;
+                seatBeltImage.Source = new BitmapImage(new Uri("images/notBuckled.jpg", UriKind.Relative));
                 beltButton.Content = "Not Buckled";
             }
         }
@@ -118,6 +129,11 @@ namespace CarSimulationLab
             {
 
             }
+        }
+
+        private void WipersOnButton_Checked(object sender, RoutedEventArgs e)
+        {
+            wipersImage.Source = new BitmapImage(new Uri("images/wipersOn.jpg", UriKind.Relative));
         }
     }
 }
