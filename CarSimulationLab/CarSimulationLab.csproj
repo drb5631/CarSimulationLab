@@ -115,5 +115,11 @@
     <Resource Include="images\wipersOff.jpg" />
     <Resource Include="images\wipersOn.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\airbag.jpg" />
+    <Resource Include="images\brakeLights.jpg" />
+    <Resource Include="images\windowDown.jpg" />
+    <Resource Include="images\windowUp.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

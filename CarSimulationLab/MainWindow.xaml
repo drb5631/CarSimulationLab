@@ -40,7 +40,7 @@
         <Button x:Name="windowButton" Content="Window Up" HorizontalAlignment="Left" Margin="10,394,0,0" VerticalAlignment="Top" Width="170" FontSize="22" FontWeight="Bold" Click="WindowButton_Click" Foreground="#FFF6F5F5" BorderBrush="#FF0C0000" Background="#FF090000" Grid.ColumnSpan="2"/>
         <Button x:Name="driverSeatButton" Content="Sit" HorizontalAlignment="Left" Margin="225.6,67,0,0" VerticalAlignment="Top" Width="158" Height="31" FontWeight="Bold" FontSize="22" RenderTransformOrigin="2.427,-8.374" Click="DriverSeatButton_Click" Background="#FF0B0101" Foreground="White" Grid.Column="1"/>
         <ListBox x:Name="wipersBox" HorizontalAlignment="Left" Height="48" Margin="41,144,0,0" VerticalAlignment="Top" Width="100" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2" SelectionChanged="WipersBox_SelectionChanged">
-            <RadioButton x:Name="wipersOffButton" Content="Wipers Off" IsChecked="True"/>
+            <RadioButton x:Name="wipersOffButton" Content="Wipers Off" IsChecked="True" Checked="WipersOffButton_Checked"/>
             <RadioButton x:Name="wipersOnButton" Content="Wipers On" Checked="WipersOnButton_Checked"/>
         </ListBox>
         <ListBox x:Name="turnSignalBox" HorizontalAlignment="Left" Height="62" Margin="48,223,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2">
@@ -69,8 +69,12 @@
             <RadioButton x:Name="ignitionOnButton" Content="On"/>
         </ListBox>
         <Image x:Name="domeLightImage" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="28,33,0,0" VerticalAlignment="Top" Width="175" Grid.ColumnSpan="2" Stretch="Fill"/>
-        <Image x:Name="seatBeltImage" Grid.Column="1" HorizontalAlignment="Left" Height="118" Margin="235.6,214,0,0" VerticalAlignment="Top" Width="137" Stretch="Fill" Source="images/notBuckled.jpg"/>
-        <Image x:Name="wipersImage" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="45,314,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="seatBeltImage" Grid.Column="1" HorizontalAlignment="Left" Height="118" Margin="174.6,214,0,0" VerticalAlignment="Top" Width="137" Stretch="Fill" Source="images/notBuckled.jpg"/>
+        <Image x:Name="wipersImage" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="174.6,345,0,0" VerticalAlignment="Top" Width="138" Stretch="Fill" Source="images/wipersOff.jpg"/>
+        <Image x:Name="turnSignalImage" Grid.Column="1" HorizontalAlignment="Left" Height="118" Margin="326.6,214,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Image x:Name="windowImage" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="326.6,345,0,0" VerticalAlignment="Top" Width="162" Stretch="Fill" Source="images/windowUp.jpg" Grid.ColumnSpan="2"/>
+        <Image x:Name="brakeImage" Grid.Column="2" HorizontalAlignment="Left" Height="109" Margin="10,223,0,0" VerticalAlignment="Top" Width="162" Grid.ColumnSpan="2"/>
+        <Image x:Name="airBagImage" Grid.Column="3" HorizontalAlignment="Left" Height="100" Margin="24.2,345,0,0" VerticalAlignment="Top" Width="94" Stretch="Fill"/>
 
     </Grid>
 </Window>
