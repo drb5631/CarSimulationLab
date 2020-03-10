@@ -174,5 +174,15 @@ namespace CarSimulationLab
                 headLightsButton.Content = "Lights Off";
             }
         }
+
+        private void ExitApplicationButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void DoorOpenButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
