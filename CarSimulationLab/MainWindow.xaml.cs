@@ -127,28 +127,6 @@ namespace CarSimulationLab
             }
         }
 
-        private void WipersOnButton_Checked(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void WipersOffButton_Checked(object sender, RoutedEventArgs e)
-        {    
-            
-        }
-
-        private void WipersBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
-            
-            if (wipersOnButton.IsChecked == true) 
-            {
-                wipersImage.Source = new BitmapImage(new Uri("images/wipersOn.jpg", UriKind.Relative));
-            }
-            else
-            {
-                wipersImage.Source = new BitmapImage(new Uri("images/wipersOff.jpg", UriKind.Relative));
-            }
-        }
-
         private void TurnSignalBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (turnSignalBox.SelectedItem == leftSignalButton)
@@ -162,6 +140,38 @@ namespace CarSimulationLab
             else
             {
                 turnSignalImage.Source = null;
+            }
+        }
+
+        private void WipersButton_Click(object sender, RoutedEventArgs e)
+        {
+            if ((string) wipersButton.Content == "Wipers Off")
+            {
+                wipersImage.Source = new BitmapImage(new Uri("images/WipersOn.jpg", UriKind.Relative));
+                wipersButton.Background = Brushes.Green;
+                wipersButton.Content = "Wipers On";
+            }
+            else
+            {
+                wipersImage.Source = new BitmapImage(new Uri("images/wipersOff.jpg", UriKind.Relative));
+                wipersButton.Background = Brushes.Black;
+                wipersButton.Content = "Wipers Off";
+            }
+        }
+
+        private void HeadLightsButton_Click(object sender, RoutedEventArgs e)
+        {
+            if ((string) headLightsButton.Content == "Lights Off")
+            {
+                headLightsImage.Source = new BitmapImage(new Uri("images/lightsOn.jpg", UriKind.Relative));
+                headLightsButton.Background = Brushes.Green;
+                headLightsButton.Content = "Lights On";
+            }
+            else
+            {
+                headLightsImage.Source = new BitmapImage(new Uri("images/lightsOff.jpg", UriKind.Relative));
+                headLightsButton.Background = Brushes.Black;
+                headLightsButton.Content = "Lights Off";
             }
         }
     }
