@@ -124,5 +124,11 @@
   <ItemGroup>
     <Resource Include="images\noSignal.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\noBrake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\domeOff.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
