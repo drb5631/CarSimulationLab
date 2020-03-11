@@ -227,5 +227,45 @@ namespace CarSimulationLab
                 ignitionImage.Source = new BitmapImage(new Uri("images/carOn.jpg", UriKind.Relative));
             }
         }
+
+        private void ResetOptionsButton_Click(object sender, RoutedEventArgs e)
+        {
+            domeLightImage.Source = new BitmapImage(new Uri("images/domeOff.jpg", UriKind.Relative));
+            ignitionImage.Source = new BitmapImage(new Uri("images/noKey.jpg", UriKind.Relative));
+            headLightsImage.Source = new BitmapImage(new Uri("images/lightsOff.jpg", UriKind.Relative));
+            seatBeltImage.Source = new BitmapImage(new Uri("images/notBuckled.jpg", UriKind.Relative));
+            turnSignalImage.Source = new BitmapImage(new Uri("images/noSignal.png", UriKind.Relative));
+            gearShiftImage.Source = new BitmapImage(new Uri("images/park.jpg", UriKind.Relative));
+            airBagImage.Source = null;
+            wipersImage.Source = new BitmapImage(new Uri("images/wipersOff.jpg", UriKind.Relative));
+            windowImage.Source = new BitmapImage(new Uri("images/windowUp.jpg", UriKind.Relative));
+            brakeImage.Source = new BitmapImage(new Uri("images/noBrake.jpg", UriKind.Relative));
+
+            beltButton.Content = "Not Buckled";
+            beltButton.Background = Brushes.Red;
+            beltButton.Foreground = Brushes.White;
+            wipersButton.Content = "Wipers Off";
+            wipersButton.Background = Brushes.Black;
+            wipersButton.Foreground = Brushes.White;
+            windowButton.Content = "Window Up";
+            windowButton.Background = Brushes.Black;
+            windowButton.Foreground = Brushes.White;
+            noSignalButton.IsEnabled = true;
+            headLightsButton.Content = "Lights Off";
+            headLightsButton.Background = Brushes.Black;
+            headLightsButton.Foreground = Brushes.White;
+            domeLightButton.Content = "Light Off";
+            domeLightButton.Background = Brushes.Black;
+            domeLightButton.Foreground = Brushes.White;
+            doorClosedButton.IsChecked = true;
+            parkButton.IsEnabled = true;
+            noKeyButton.IsEnabled = true;
+            driverSeatButton.Content = "Sit";
+            driverSeatButton.Background = Brushes.Black;
+            driverSeatButton.Foreground = Brushes.White;
+            brakeButton.Content = "Apply Brake";
+            brakeButton.Background = Brushes.Black;
+            brakeButton.Foreground = Brushes.White;
+        }
     }
 }
