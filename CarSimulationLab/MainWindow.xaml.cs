@@ -108,7 +108,7 @@ namespace CarSimulationLab
             }
             else
             {
-                brakeImage.Source = null;
+                brakeImage.Source = new BitmapImage(new Uri("images/noBrake.jpg", UriKind.Relative));
                 brakeButton.Background = Brushes.Black;
                 brakeButton.Content = "Apply Brake";
             }
