@@ -18,54 +18,54 @@
             <ColumnDefinition Width="157*"/>
         </Grid.ColumnDefinitions>
 
-        <Label x:Name="driverWindowLabel" Content="Driver Window" HorizontalAlignment="Left" Margin="32,163.4,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.05,0.219" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Row="1"/>
-        <Label x:Name="gearShiftLabel" Content="Gear Shift" HorizontalAlignment="Left" Margin="74.6,2.4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Grid.Column="1" Grid.Row="1"/>
-        <Label x:Name="domeLightLabel" Content="Dome Light" HorizontalAlignment="Left" Margin="84.6,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.206,-2.344" FontWeight="Bold" FontSize="14" Grid.Column="1"/>
-        <Label x:Name="headLightsLabel" Content="Head Lights" HorizontalAlignment="Left" Margin="45,88.4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Grid.Row="1"/>
+        <Label x:Name="driverWindowLabel" Content="Driver Window" HorizontalAlignment="Left" Margin="32,172.2,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.05,0.219" FontSize="14" FontWeight="Bold" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Label x:Name="gearShiftLabel" Content="Gear Shift" HorizontalAlignment="Left" Margin="56.6,191,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Grid.Column="1" Grid.RowSpan="2"/>
+        <Label x:Name="domeLightLabel" Content="Dome Light" HorizontalAlignment="Left" Margin="83.6,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.206,-2.344" FontWeight="Bold" FontSize="14" Grid.Column="1"/>
+        <Label x:Name="headLightsLabel" Content="Head Lights" HorizontalAlignment="Left" Margin="45,97.2,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Grid.Row="1"/>
         <Label x:Name="seatBeltLabel" Content="Seat Belt" HorizontalAlignment="Left" Margin="64,35,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         <Label x:Name="turnSignalLabel" HorizontalAlignment="Left" Margin="48,194,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Grid.RowSpan="2"/>
-        <Label x:Name="driverSeatLabel" Content="Driver Seat" HorizontalAlignment="Left" Margin="264.6,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.31,0.583" FontWeight="Bold" FontSize="14" Grid.Column="1"/>
-        <Label x:Name="wipersLabel" Content="Windshield Wipers" HorizontalAlignment="Left" Margin="32,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.453,-0.563" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2"/>
-        <Label x:Name="breakLabel" Content="Brake" HorizontalAlignment="Left" Margin="274.6,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.97,0.563" FontWeight="Bold" FontSize="14" Grid.Column="1"/>
+        <Label x:Name="driverSeatLabel" Content="Driver Seat" HorizontalAlignment="Left" Margin="261.6,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.31,0.583" FontWeight="Bold" FontSize="14" Grid.Column="1"/>
+        <Label x:Name="wipersLabel" Content="Windshield Wipers" HorizontalAlignment="Left" Margin="33,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.453,-0.563" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2"/>
+        <Label x:Name="breakLabel" Content="Brake" HorizontalAlignment="Left" Margin="278.6,103,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.97,0.563" FontWeight="Bold" FontSize="14" Grid.Column="1"/>
         <Label x:Name="driverDoorLabel" Content="Driver Door" HorizontalAlignment="Left" Margin="69.6,110,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Grid.Column="1"/>
         <Button x:Name="domeLightButton" Content="Light Off" HorizontalAlignment="Left" Margin="60.6,60,0,0" VerticalAlignment="Top" Width="131" Click="DomeButton_Click" Height="39" FontWeight="Bold" FontSize="22" Foreground="White" BorderBrush="#FF020000" Background="#FF0C0000" Grid.Column="1"/>
         <Button x:Name="beltButton" Content="Not Buckled" HorizontalAlignment="Left" Margin="14,62,0,0" VerticalAlignment="Top" Width="153" Click="BeltButton_Click" FontSize="22" FontWeight="Bold" Background="#FFFF0C0C" Foreground="White" Grid.ColumnSpan="2"/>
-        <Button x:Name="brakeButton" Content="Apply Brake" HorizontalAlignment="Left" Margin="225.6,134,0,0" VerticalAlignment="Top" Width="158" Height="39" FontWeight="Bold" FontSize="22" Click="BrakeButton_Click" BorderBrush="Black" Foreground="White" Background="#FF110101" Grid.Column="1"/>
-        <Button x:Name="windowButton" Content="Window Up" HorizontalAlignment="Left" Margin="10,197.4,0,0" VerticalAlignment="Top" Width="170" FontSize="22" FontWeight="Bold" Click="WindowButton_Click" Foreground="#FFF6F5F5" BorderBrush="#FF0C0000" Background="#FF090000" Grid.ColumnSpan="2" Grid.Row="1"/>
-        <Button x:Name="driverSeatButton" Content="Sit" HorizontalAlignment="Left" Margin="225.6,67,0,0" VerticalAlignment="Top" Width="158" Height="31" FontWeight="Bold" FontSize="22" RenderTransformOrigin="2.427,-8.374" Click="DriverSeatButton_Click" Background="#FF0B0101" Foreground="White" Grid.Column="1"/>
-        <ListBox x:Name="turnSignalBox" HorizontalAlignment="Left" Height="62" Margin="48,26.4,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2" IsSynchronizedWithCurrentItem="False" Grid.Row="1">
-            <RadioButton x:Name="noSignalButton" Content="No Signal" IsChecked="True"/>
-            <RadioButton x:Name="leftSignalButton" Content="Left Signal"/>
-            <RadioButton x:Name="rightSignalButton" Content="Right Signal"/>
+        <Button x:Name="brakeButton" Content="Apply Brake" HorizontalAlignment="Left" Margin="225.6,137,0,0" VerticalAlignment="Top" Width="158" Height="39" FontWeight="Bold" FontSize="22" Click="BrakeButton_Click" BorderBrush="Black" Foreground="White" Background="#FF110101" Grid.Column="1"/>
+        <Button x:Name="windowButton" Content="Window Up" HorizontalAlignment="Left" Margin="10,208.2,0,0" VerticalAlignment="Top" Width="170" FontSize="22" FontWeight="Bold" Click="WindowButton_Click" Foreground="#FFF6F5F5" BorderBrush="#FF0C0000" Background="#FF090000" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <Button x:Name="driverSeatButton" Content="Sit" HorizontalAlignment="Left" Margin="225.6,60,0,0" VerticalAlignment="Top" Width="158" Height="38" FontWeight="Bold" FontSize="22" RenderTransformOrigin="2.427,-8.374" Click="DriverSeatButton_Click" Background="#FF0B0101" Foreground="White" Grid.Column="1"/>
+        <ListBox x:Name="turnSignalBox" HorizontalAlignment="Left" Height="80" Margin="28,17.2,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold" BorderBrush="Black" Grid.ColumnSpan="2" IsSynchronizedWithCurrentItem="False" Grid.Row="1" SelectionChanged="TurnSignalBox_SelectionChanged" FontSize="14" BorderThickness="2">
+            <ListBoxItem x:Name="noSignalButton" Content="No Signal"/>
+            <ListBoxItem x:Name="leftSignalButton" Content="Left Signal"/>
+            <ListBoxItem x:Name="rightSignalButton" Content="Right Signal"/>
         </ListBox>
-        <ListBox x:Name="driverDoorBox" HorizontalAlignment="Left" Height="50" Margin="60.6,146,0,0" VerticalAlignment="Top" Width="114" FontWeight="Bold" BorderBrush="{x:Null}" Grid.Column="1">
+        <ListBox x:Name="driverDoorBox" HorizontalAlignment="Left" Height="50" Margin="56.6,141,0,0" VerticalAlignment="Top" Width="114" FontWeight="Bold" BorderBrush="{x:Null}" Grid.Column="1">
             <RadioButton x:Name="doorClosedButton" Content="Door Closed" IsChecked="True"/>
             <RadioButton x:Name="doorOpenButton" Content="Door Open" Checked="DoorOpenButton_Checked"/>
         </ListBox>
-        <ListBox x:Name="gearShiftBox" HorizontalAlignment="Left" Height="82" Margin="60.6,33.4,0,0" VerticalAlignment="Top" Width="100" BorderThickness="0" FontWeight="Bold" Grid.Column="1" Grid.Row="1">
-            <RadioButton x:Name="parkButton" Content="Park" IsChecked="True"/>
-            <RadioButton x:Name="reverseButton" Content="Reverse"/>
-            <RadioButton x:Name="neutralButton" Content="Neutral"/>
-            <RadioButton x:Name="driveButton" Content="Drive"/>
+        <ListBox x:Name="gearShiftBox" HorizontalAlignment="Left" Height="105" Margin="47.6,21.2,0,0" VerticalAlignment="Top" Width="100" BorderThickness="2" FontWeight="Bold" Grid.Column="1" Grid.Row="1" SelectionChanged="GearShiftBox_SelectionChanged" FontSize="14" BorderBrush="Black">
+            <ListBoxItem x:Name="parkButton" Content="Park"/>
+            <ListBoxItem x:Name="reverseButton" Content="Reverse"/>
+            <ListBoxItem x:Name="neutralButton" Content="Neutral"/>
+            <ListBoxItem x:Name="driveButton" Content="Drive"/>
         </ListBox>
-        <ListBox x:Name="ignitionBox" HorizontalAlignment="Left" Height="100" Margin="69.6,148.4,0,0" VerticalAlignment="Top" Width="100" FontWeight="Bold" BorderBrush="{x:Null}" Grid.Column="1" Grid.Row="1">
-            <RadioButton x:Name="ignitionNoKeyButton" Content="No Key" IsChecked="True"/>
-            <RadioButton x:Name="ignitionKeyOffButton" Content="Key Off"/>
-            <RadioButton x:Name="ignitionAccessoryButton" Content="Accessory"/>
-            <RadioButton x:Name="ignitionOnButton" Content="On"/>
+        <ListBox x:Name="ignitionBox" HorizontalAlignment="Left" Height="100" Margin="47.6,153.2,0,0" VerticalAlignment="Top" Width="100" FontWeight="Bold" BorderBrush="Black" Grid.Column="1" Grid.Row="1" FontSize="14" SelectionChanged="IgnitionBox_SelectionChanged_1" BorderThickness="2">
+            <ListBoxItem x:Name="noKeyButton" Content="No Key"/>
+            <ListBoxItem x:Name="keyOffButton" Content="Key Off"/>
+            <ListBoxItem x:Name="accessoryButton" Content="Accessory"/>
+            <ListBoxItem x:Name="onButton" Content="On"/>
         </ListBox>
         <Image x:Name="domeLightImage" Grid.Column="2" HorizontalAlignment="Left" Height="72" Margin="38,12,0,0" VerticalAlignment="Top" Width="129" Grid.ColumnSpan="2" Stretch="Fill"/>
         <Image x:Name="seatBeltImage" Grid.Column="1" HorizontalAlignment="Left" Height="96" Margin="165.6,4.2,0,0" VerticalAlignment="Top" Width="116" Stretch="Fill" Source="images/notBuckled.jpg" Grid.Row="1"/>
         <Image x:Name="wipersImage" Grid.Column="1" HorizontalAlignment="Left" Height="87" Margin="165.6,105.2,0,0" VerticalAlignment="Top" Width="116" Stretch="Fill" Source="images/wipersOff.jpg" Grid.Row="1"/>
-        <Image x:Name="turnSignalImage" Grid.Column="1" HorizontalAlignment="Left" Height="96" Margin="296.6,4.2,0,0" VerticalAlignment="Top" Width="98" Stretch="Fill" Grid.Row="1"/>
+        <Image x:Name="turnSignalImage" Grid.Column="1" HorizontalAlignment="Left" Height="96" Margin="296.6,4.2,0,0" VerticalAlignment="Top" Width="98" Stretch="Fill" Grid.Row="1" Source="images/noSignal.png"/>
         <Image x:Name="windowImage" Grid.Column="1" HorizontalAlignment="Left" Height="87" Margin="287.6,105.2,0,0" VerticalAlignment="Top" Width="116" Stretch="Fill" Source="images/windowUp.jpg" Grid.Row="1"/>
         <Image x:Name="brakeImage" Grid.Column="1" HorizontalAlignment="Left" Height="102" Margin="412.6,115.2,0,0" VerticalAlignment="Top" Width="109" Grid.ColumnSpan="3" Grid.Row="1"/>
         <Image x:Name="airBagImage" Grid.Column="3" HorizontalAlignment="Left" Height="95" Margin="37.2,115.2,0,0" VerticalAlignment="Top" Width="109" Stretch="Fill" Grid.Row="1"/>
         <Button x:Name="wipersButton" Content="Wipers Off" HorizontalAlignment="Left" Margin="40,144,0,0" VerticalAlignment="Top" Width="121" Height="36" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="22" Foreground="White" BorderBrush="Black" Background="Black" Click="WipersButton_Click"/>
-        <Button x:Name="headLightsButton" Content="Lights Off" HorizontalAlignment="Left" Margin="40,122.4,0,0" VerticalAlignment="Top" Width="121" Height="36" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="22" Background="Black" Foreground="White" Click="HeadLightsButton_Click" Grid.Row="1"/>
+        <Button x:Name="headLightsButton" Content="Lights Off" HorizontalAlignment="Left" Margin="28,131.2,0,0" VerticalAlignment="Top" Width="121" Height="36" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="22" Background="Black" Foreground="White" Click="HeadLightsButton_Click" Grid.Row="1" RenderTransformOrigin="0.383,0.589"/>
         <Image x:Name="headLightsImage" Grid.Column="3" HorizontalAlignment="Left" Height="100" Margin="14.2,89,0,0" VerticalAlignment="Top" Width="132" Stretch="Fill" Source="images/lightsOff.jpg"/>
-        <Label x:Name="ignitionLabel" Content="Ignition" HorizontalAlignment="Left" Margin="74.6,115.4,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.206,-2.344" FontWeight="Bold" FontSize="14" Grid.Column="1" Grid.Row="1"/>
-        <Label x:Name="signalLabel" Content="Turn Signals" HorizontalAlignment="Left" Margin="52,194,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.206,-2.344" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2" Width="99" Grid.RowSpan="2"/>
+        <Label x:Name="ignitionLabel" Content="Ignition" HorizontalAlignment="Left" Margin="60.6,126.2,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.206,-2.344" FontWeight="Bold" FontSize="14" Grid.Column="1" Grid.Row="1"/>
+        <Label x:Name="signalLabel" Content="Turn Signals" HorizontalAlignment="Left" Margin="32,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.206,-2.344" FontWeight="Bold" FontSize="14" Width="99" Grid.RowSpan="2"/>
         <Image x:Name="gearShiftImage" Grid.ColumnSpan="3" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="399.6,194,0,0" VerticalAlignment="Top" Width="104" Stretch="Fill" Source="images/park.jpg" Grid.RowSpan="2"/>
         <Image Grid.Column="3" HorizontalAlignment="Left" Height="97" Margin="14.2,0.2,0,0" VerticalAlignment="Top" Width="132" Grid.Row="1"/>
         <Image x:Name="ignitionImage" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="399.6,89,0,0" VerticalAlignment="Top" Width="108" Stretch="Fill" Source="images/noKey.jpg" Grid.ColumnSpan="3"/>

@@ -121,5 +121,8 @@
     <Resource Include="images\windowDown.jpg" />
     <Resource Include="images\windowUp.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\noSignal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

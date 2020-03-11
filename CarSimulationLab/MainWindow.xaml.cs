@@ -139,7 +139,7 @@ namespace CarSimulationLab
             }
             else
             {
-                turnSignalImage.Source = null;
+                turnSignalImage.Source = new BitmapImage(new Uri("images/noSignal.png", UriKind.Relative));
             }
         }
 
@@ -183,6 +183,46 @@ namespace CarSimulationLab
         private void DoorOpenButton_Checked(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void GearShiftBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (gearShiftBox.SelectedItem == parkButton)
+            {
+                gearShiftImage.Source = new BitmapImage(new Uri("images/park.jpg", UriKind.Relative));
+            }
+            else if (gearShiftBox.SelectedItem == reverseButton)
+            {
+                gearShiftImage.Source = new BitmapImage(new Uri("images/reverse.jpg", UriKind.Relative));
+            }
+            else if (gearShiftBox.SelectedItem == neutralButton)
+            {
+                gearShiftImage.Source = new BitmapImage(new Uri("images/neutral.jpg", UriKind.Relative));
+            }
+            else
+            {
+                gearShiftImage.Source = new BitmapImage(new Uri("images/drive.jpg", UriKind.Relative));
+            }
+        }
+
+        private void IgnitionBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+            if (ignitionBox.SelectedItem == noKeyButton)
+            {
+                ignitionImage.Source = new BitmapImage(new Uri("images/noKey.jpg", UriKind.Relative));
+            }
+            else if (ignitionBox.SelectedItem == keyOffButton)
+            {
+                ignitionImage.Source = new BitmapImage(new Uri("images/keyOff.png", UriKind.Relative));
+            }
+            else if (ignitionBox.SelectedItem == accessoryButton)
+            {
+                ignitionImage.Source = new BitmapImage(new Uri("images/accessory.jpg", UriKind.Relative));
+            }
+            else
+            {
+                ignitionImage.Source = new BitmapImage(new Uri("images/carOn.jpg", UriKind.Relative));
+            }
         }
     }
 }
